@@ -14,6 +14,12 @@
 		489ABA0D22D73CF700AD26B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489ABA0B22D73CF700AD26B2 /* LaunchScreen.storyboard */; };
 		489ABA1822D73CF700AD26B2 /* ClassXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA1722D73CF700AD26B2 /* ClassXTests.swift */; };
 		489ABA2322D73CF700AD26B2 /* ClassXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA2222D73CF700AD26B2 /* ClassXUITests.swift */; };
+		489ABA3522D74C3F00AD26B2 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA3422D74C3F00AD26B2 /* MyMapViewController.swift */; };
+		489ABA3822D74C5D00AD26B2 /* MyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA3722D74C5D00AD26B2 /* MyWebViewController.swift */; };
+		489ABA3A22D74C7C00AD26B2 /* MyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA3922D74C7C00AD26B2 /* MyLoginViewController.swift */; };
+		489ABA3C22D74C9200AD26B2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA3B22D74C9200AD26B2 /* MasterViewController.swift */; };
+		489ABA3E22D74CA300AD26B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA3D22D74CA300AD26B2 /* DetailViewController.swift */; };
+		489ABA4022D7512900AD26B2 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489ABA3F22D7512900AD26B2 /* AsyncRequestWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		489ABA1E22D73CF700AD26B2 /* ClassXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		489ABA2222D73CF700AD26B2 /* ClassXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassXUITests.swift; sourceTree = "<group>"; };
 		489ABA2422D73CF700AD26B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489ABA3422D74C3F00AD26B2 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
+		489ABA3722D74C5D00AD26B2 /* MyWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebViewController.swift; sourceTree = "<group>"; };
+		489ABA3922D74C7C00AD26B2 /* MyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoginViewController.swift; sourceTree = "<group>"; };
+		489ABA3B22D74C9200AD26B2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		489ABA3D22D74CA300AD26B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		489ABA3F22D7512900AD26B2 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,17 @@
 		489ABA0122D73CF600AD26B2 /* ClassX */ = {
 			isa = PBXGroup;
 			children = (
+				489ABA3022D74AAB00AD26B2 /* LoginFlow */,
+				489ABA3122D74B7400AD26B2 /* MasterFlow */,
+				489ABA3322D74BBC00AD26B2 /* MapFlow */,
+				489ABA3222D74B8A00AD26B2 /* WebFlow */,
 				489ABA0222D73CF600AD26B2 /* AppDelegate.swift */,
 				489ABA0422D73CF600AD26B2 /* ViewController.swift */,
 				489ABA0622D73CF600AD26B2 /* Main.storyboard */,
 				489ABA0922D73CF700AD26B2 /* Assets.xcassets */,
 				489ABA0B22D73CF700AD26B2 /* LaunchScreen.storyboard */,
 				489ABA0E22D73CF700AD26B2 /* Info.plist */,
+				489ABA3F22D7512900AD26B2 /* AsyncRequestWorker.swift */,
 			);
 			path = ClassX;
 			sourceTree = "<group>";
@@ -123,6 +140,39 @@
 				489ABA2422D73CF700AD26B2 /* Info.plist */,
 			);
 			path = ClassXUITests;
+			sourceTree = "<group>";
+		};
+		489ABA3022D74AAB00AD26B2 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				489ABA3922D74C7C00AD26B2 /* MyLoginViewController.swift */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		489ABA3122D74B7400AD26B2 /* MasterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				489ABA3B22D74C9200AD26B2 /* MasterViewController.swift */,
+				489ABA3D22D74CA300AD26B2 /* DetailViewController.swift */,
+			);
+			path = MasterFlow;
+			sourceTree = "<group>";
+		};
+		489ABA3222D74B8A00AD26B2 /* WebFlow */ = {
+			isa = PBXGroup;
+			children = (
+				489ABA3722D74C5D00AD26B2 /* MyWebViewController.swift */,
+			);
+			path = WebFlow;
+			sourceTree = "<group>";
+		};
+		489ABA3322D74BBC00AD26B2 /* MapFlow */ = {
+			isa = PBXGroup;
+			children = (
+				489ABA3422D74C3F00AD26B2 /* MyMapViewController.swift */,
+			);
+			path = MapFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489ABA3522D74C3F00AD26B2 /* MyMapViewController.swift in Sources */,
 				489ABA0522D73CF600AD26B2 /* ViewController.swift in Sources */,
+				489ABA3C22D74C9200AD26B2 /* MasterViewController.swift in Sources */,
 				489ABA0322D73CF600AD26B2 /* AppDelegate.swift in Sources */,
+				489ABA4022D7512900AD26B2 /* AsyncRequestWorker.swift in Sources */,
+				489ABA3822D74C5D00AD26B2 /* MyWebViewController.swift in Sources */,
+				489ABA3A22D74C7C00AD26B2 /* MyLoginViewController.swift in Sources */,
+				489ABA3E22D74CA300AD26B2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
